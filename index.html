@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dharmesh Arora — Content Creator & Video Editor</title>
+  <meta name="description" content="Dharmesh Arora is a professional social media content creator, video editor, and graphic designer helping brands grow with high-quality visuals and strategy." />
+  <meta name="keywords" content="content creator, video editor, graphic designer, social media, brand growth, reels, thumbnails, logo design" />
+  <meta name="author" content="Dharmesh Arora" />
+  <meta property="og:title" content="Dharmesh Arora — Content Creator & Video Editor" />
+  <meta property="og:description" content="I create high-quality content that grows brands. Portfolio of social media content creation, video editing, and graphic design." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ======== PRELOADER ======== -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-ring"></div>
+      <span class="preloader-text">DHARMESH ARORA</span>
+    </div>
+  </div>
+
+  <!-- ======== CURSOR FOLLOWER ======== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ======== HEADER / NAV ======== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#home" class="brand" id="headerBrand">
+        <span class="brand-d">D</span>harmesh<span class="brand-dot">.</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#achievements">Stats</a>
+        <a href="#services">Services</a>
+        <a href="resume.html" class="nav-resume">📄 Resume</a>
+        <a href="#contact" class="nav-cta">Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======== HERO ======== -->
+    <section id="home" class="hero-section">
+      <canvas id="heroCanvas" class="hero-canvas"></canvas>
+      <div class="hero-gradient-orb hero-orb-1"></div>
+      <div class="hero-gradient-orb hero-orb-2"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy" data-animate="fade-up">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for Freelance Work
+          </div>
+          <h1>I Create <span class="text-gradient">High-Quality</span> Content That <span class="text-gradient">Grows Brands</span> 🚀</h1>
+          <p class="hero-subtitle">Social Media Content Creator & Video Editor helping brands achieve <strong>engagement</strong> and <strong>growth</strong> through compelling visuals and strategic content.</p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary" id="heroViewPortfolio">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              View Portfolio
+            </a>
+            <a href="#contact" class="btn btn-glass" id="heroHireMe">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              Hire Me
+            </a>
+          </div>
+          <div class="hero-mini-stats">
+            <div class="mini-stat">
+              <strong>170+</strong>
+              <span>Projects</span>
+            </div>
+            <div class="mini-stat-divider"></div>
+            <div class="mini-stat">
+              <strong>600K+</strong>
+              <span>Reach</span>
+            </div>
+            <div class="mini-stat-divider"></div>
+            <div class="mini-stat">
+              <strong>2K+</strong>
+              <span>Followers</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" data-animate="fade-up" data-delay="200">
+          <div class="hero-image-stack">
+            <div class="hero-img-card hero-img-main">
+              <div class="hero-img-glow"></div>
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Creative content creation workspace" />
+              <div class="hero-img-overlay">
+                <span class="overlay-tag">Creative Studio</span>
+              </div>
+            </div>
+            <div class="hero-floating-card float-card-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              <div>
+                <strong>600K+</strong>
+                <span>Impressions</span>
+              </div>
+            </div>
+            <div class="hero-floating-card float-card-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              <div>
+                <strong>↑ 340%</strong>
+                <span>Growth</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" id="scrollIndicator">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ======== ABOUT ======== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">About Me</span>
+          <h2>Creative Production With <span class="text-gradient">Real Impact</span></h2>
+          <p class="section-desc">More than just edits — I deliver results that move the needle for brands.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-content" data-animate="fade-up">
+            <div class="about-story glass-card">
+              <p class="about-lead">Hey, I'm <strong>Dharmesh Arora</strong> — a passionate content creator and visual storyteller based in India. I specialize in transforming brand ideas into scroll-stopping content that drives real engagement.</p>
+              <p>With experience across <strong>photography, video editing, color grading, and graphic design</strong>, I've helped brands achieve <strong>600K+ reach</strong> and grow <strong>2,000+ followers</strong> organically on Instagram. My approach combines creative intuition with data-driven strategy — every post is designed to perform.</p>
+              <div class="about-highlights">
+                <div class="highlight-item">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  <span>Managed end-to-end Instagram campaigns</span>
+                </div>
+                <div class="highlight-item">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  <span>Delivered 600K+ reach & 2000+ followers growth</span>
+                </div>
+                <div class="highlight-item">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  <span>Expert with Lightroom, CapCut, Canva & design tools</span>
+                </div>
+                <div class="highlight-item">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  <span>Fast, reliable delivery with a client-first approach</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-info-cards" data-animate="fade-up" data-delay="150">
+            <div class="info-card glass-card">
+              <div class="info-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <strong>1+ Year</strong>
+              <p>Professional Experience</p>
+            </div>
+            <div class="info-card glass-card">
+              <div class="info-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <strong>600K+</strong>
+              <p>Audience Reached</p>
+            </div>
+            <div class="info-card glass-card">
+              <div class="info-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              </div>
+              <strong>2000+</strong>
+              <p>Followers Grown</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SKILLS ======== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Skills & Tools</span>
+          <h2>My <span class="text-gradient">Creative Arsenal</span></h2>
+          <p class="section-desc">A versatile toolkit to bring any creative vision to life.</p>
+        </div>
+        <div class="skills-grid" data-animate="fade-up" data-delay="100">
+          <div class="skill-card glass-card">
+            <div class="skill-icon" style="--icon-color: #f97316;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+            <strong>Photo Editing</strong>
+            <p>Lightroom · Snapseed · PicsArt</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 90%;"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon" style="--icon-color: #8b5cf6;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <strong>Video Editing</strong>
+            <p>CapCut · Premiere Pro · Reels</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 92%;"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon" style="--icon-color: #ec4899;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="13.5" cy="6.5" r="2.5"/><path d="M17.5 10.5a5 5 0 00-8 0"/><circle cx="6" cy="13" r="3"/><path d="M3 19a5 5 0 018 0"/></svg>
+            </div>
+            <strong>Colour Grading</strong>
+            <p>Mood, tone & cinematic looks</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 88%;"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon" style="--icon-color: #06b6d4;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <strong>Graphic Design</strong>
+            <p>Social posts · Banners · Creatives</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 85%;"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon" style="--icon-color: #14b8a6;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l1.912 5.813h6.18l-5 3.631 1.912 5.813L12 14.613l-5.004 3.644 1.912-5.813-5-3.631h6.18z"/></svg>
+            </div>
+            <strong>Logo Design</strong>
+            <p>Brand identity & visual marks</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 82%;"></div></div>
+          </div>
+          <div class="skill-card glass-card">
+            <div class="skill-icon" style="--icon-color: #f43f5e;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <strong>Thumbnail Design</strong>
+            <p>Clickable visuals for max CTR</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 91%;"></div></div>
+          </div>
+          <div class="skill-card glass-card skill-card-wide">
+            <div class="skill-icon" style="--icon-color: #a78bfa;">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <strong>Social Media Management</strong>
+            <p>Strategy · Content planning · Audience growth · Analytics</p>
+            <div class="skill-bar"><div class="skill-fill" style="--fill: 87%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== PORTFOLIO ======== -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Portfolio</span>
+          <h2>Recent <span class="text-gradient">Creative Work</span></h2>
+          <p class="section-desc">A curated selection of my best projects — each crafted to deliver impact.</p>
+        </div>
+        <div class="portfolio-filter" data-animate="fade-up">
+          <button class="filter-btn active" data-filter="all">All Work</button>
+          <button class="filter-btn" data-filter="editing">Photo Edits</button>
+          <button class="filter-btn" data-filter="video">Video/Reels</button>
+          <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="portfolio-grid" data-animate="fade-up" data-delay="100">
+          <div class="portfolio-item" data-category="editing" id="portfolioItem1">
+            <div class="portfolio-img-wrap">
+              <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=700&q=80" alt="Professional photo edit — before and after color correction" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Photo Edit</span>
+                <h3>Color Correction & Retouch</h3>
+                <p>Professional color grading with mood enhancement</p>
+                <button class="portfolio-expand" aria-label="Expand project">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-item-tall" data-category="video" id="portfolioItem2">
+            <div class="portfolio-img-wrap">
+              <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=700&q=80" alt="High-energy Instagram reel with motion graphics" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Video / Reels</span>
+                <h3>Trending Reel Edit</h3>
+                <p>High-energy edit with dynamic transitions & beat sync</p>
+                <button class="portfolio-expand" aria-label="Expand project">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="design" id="portfolioItem3">
+            <div class="portfolio-img-wrap">
+              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=700&q=80" alt="Modern thumbnail design for YouTube" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Design</span>
+                <h3>Thumbnail Design</h3>
+                <p>Clickable thumbnails increasing CTR by 40%</p>
+                <button class="portfolio-expand" aria-label="Expand project">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="design" id="portfolioItem4">
+            <div class="portfolio-img-wrap">
+              <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=700&q=80" alt="Brand logo and visual identity graphics" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Design</span>
+                <h3>Logo & Brand Identity</h3>
+                <p>Minimal, modern brand identity package</p>
+                <button class="portfolio-expand" aria-label="Expand project">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item portfolio-item-tall" data-category="editing" id="portfolioItem5">
+            <div class="portfolio-img-wrap">
+              <img src="https://images.unsplash.com/photo-1493863641943-9b68992a8d07?auto=format&fit=crop&w=700&q=80" alt="Cinematic color grading for photo series" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Photo Edit</span>
+                <h3>Cinematic Color Grade</h3>
+                <p>Moody, editorial-style grading for fashion shoots</p>
+                <button class="portfolio-expand" aria-label="Expand project">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="video" id="portfolioItem6">
+            <div class="portfolio-img-wrap">
+              <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=700&q=80" alt="Product showcase video edit" />
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Video</span>
+                <h3>Product Showcase Reel</h3>
+                <p>Smooth product video with cinematic transitions</p>
+                <button class="portfolio-expand" aria-label="Expand project">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== ACHIEVEMENTS ======== -->
+    <section id="achievements" class="section achievements-section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Achievements</span>
+          <h2>Impact By <span class="text-gradient">The Numbers</span></h2>
+        </div>
+        <div class="stats-grid" data-animate="fade-up" data-delay="100">
+          <div class="stat-card glass-card">
+            <div class="stat-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <strong class="counter" data-target="170" data-suffix="+">0</strong>
+            <p>Posts Created</p>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <strong class="counter" data-target="600" data-suffix="K+">0</strong>
+            <p>Total Reach</p>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <strong class="counter" data-target="2000" data-suffix="+">0</strong>
+            <p>Followers Grown</p>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <strong class="counter" data-target="1" data-suffix=" Year+">0</strong>
+            <p>Experience</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== SERVICES ======== -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Services</span>
+          <h2>What I <span class="text-gradient">Offer</span></h2>
+          <p class="section-desc">End-to-end creative solutions tailored to grow your brand.</p>
+        </div>
+        <div class="services-grid" data-animate="fade-up" data-delay="100">
+          <div class="service-card glass-card" id="serviceSMM">
+            <div class="service-number">01</div>
+            <div class="service-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <strong>Social Media Management</strong>
+            <p>Complete content strategy, post planning, scheduling, and audience growth. I handle your social presence so you can focus on your business.</p>
+            <a href="#contact" class="service-link">Get Started →</a>
+          </div>
+          <div class="service-card glass-card" id="serviceVideo">
+            <div class="service-number">02</div>
+            <div class="service-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <strong>Video Editing (Reels/Shorts)</strong>
+            <p>Scroll-stopping reels and shorts with beat sync, dynamic transitions, text animations, and cinematic pacing that keep viewers watching.</p>
+            <a href="#contact" class="service-link">Get Started →</a>
+          </div>
+          <div class="service-card glass-card" id="servicePhoto">
+            <div class="service-number">03</div>
+            <div class="service-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            </div>
+            <strong>Photo Editing & Colour Grading</strong>
+            <p>Professional retouching, color correction, and cinematic grading that transforms ordinary photos into stunning, share-worthy content.</p>
+            <a href="#contact" class="service-link">Get Started →</a>
+          </div>
+          <div class="service-card glass-card" id="serviceThumbnail">
+            <div class="service-number">04</div>
+            <div class="service-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <strong>Thumbnail Design</strong>
+            <p>Eye-catching, high-CTR thumbnail designs that make people WANT to click. Proven to increase views and engagement significantly.</p>
+            <a href="#contact" class="service-link">Get Started →</a>
+          </div>
+          <div class="service-card glass-card" id="serviceLogo">
+            <div class="service-number">05</div>
+            <div class="service-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l1.912 5.813h6.18l-5 3.631 1.912 5.813L12 14.613l-5.004 3.644 1.912-5.813-5-3.631h6.18z"/></svg>
+            </div>
+            <strong>Logo Design</strong>
+            <p>Memorable, modern logo designs that capture your brand essence. From concept to final files — ready for print and digital use.</p>
+            <a href="#contact" class="service-link">Get Started →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== TESTIMONIALS ======== -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Testimonials</span>
+          <h2>What <span class="text-gradient">Clients Say</span></h2>
+          <p class="section-desc">Don't just take my word for it — here's what my clients have to say.</p>
+        </div>
+        <div class="testimonials-track" data-animate="fade-up" data-delay="100">
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"Dharmesh completely transformed our Instagram presence. Our engagement went up 340% in just 2 months. His editing quality is insane — every reel he creates goes viral!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #a78bfa, #8b5cf6);">R</div>
+              <div>
+                <strong>Rahul Sharma</strong>
+                <span>Founder, StyleHub</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"Best content creator I've ever worked with. Fast delivery, amazing quality, and he actually understands what brands need. My thumbnails get 3x more clicks now!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #34d399, #06b6d4);">P</div>
+              <div>
+                <strong>Priya Verma</strong>
+                <span>YouTuber, 50K Subscribers</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card glass-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p>"Dharmesh designed our logo and social media content. The quality is premium and the turnaround time is impressive. Highly recommend for any brand looking to level up!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #f472b6, #ec4899);">A</div>
+              <div>
+                <strong>Amit Patel</strong>
+                <span>CEO, GreenLeaf Organics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== CONTACT ======== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Let's <span class="text-gradient">Work Together</span></h2>
+          <p class="section-desc">Have a project in mind? Let's create something amazing together.</p>
+        </div>
+        <div class="contact-grid" data-animate="fade-up" data-delay="100">
+          <div class="contact-info">
+            <div class="contact-method glass-card">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>Email Me</strong>
+                <a href="mailto:dharmeshchirawa@gmail.com">dharmeshchirawa@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-method glass-card">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/918505001880" target="_blank" rel="noreferrer">+91 85050 01880 →</a>
+              </div>
+            </div>
+            <div class="contact-method glass-card">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div>
+                <strong>Instagram</strong>
+                <a href="https://instagram.com/someting_elses" target="_blank" rel="noreferrer">@someting_elses →</a>
+              </div>
+            </div>
+
+            <div class="contact-method glass-card">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Location</strong>
+                <span style="color: var(--text-secondary); font-size: 0.88rem;">Chirawa, Jhunjhunu, Rajasthan, India</span>
+              </div>
+            </div>
+
+            <a href="https://wa.me/918505001880" class="whatsapp-cta btn" id="whatsappBtn" target="_blank" rel="noreferrer">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Chat on WhatsApp — Quick Response!
+            </a>
+          </div>
+          <form class="contact-form glass-card" id="contactForm" action="#" method="post">
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" placeholder="Project inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Your Message</label>
+              <textarea id="contactMessage" name="message" rows="5" placeholder="Tell me about your project, goals, and timeline..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="contactSubmit">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="brand"><span class="brand-d">D</span>harmesh<span class="brand-dot">.</span></a>
+        <p>Creating high-quality content that grows brands.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <strong>Navigation</strong>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <strong>Social</strong>
+          <a href="https://instagram.com/someting_elses" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://wa.me/918505001880" target="_blank" rel="noreferrer">WhatsApp</a>
+          <a href="mailto:dharmeshchirawa@gmail.com">Email</a>
+          <a href="resume.html">Resume</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="footerYear"></span> Dharmesh Arora. All rights reserved.</p>
+        <p class="footer-tagline">Crafted with passion 🔥</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== LIGHTBOX MODAL ======== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img id="lightboxImg" src="" alt="Expanded portfolio item" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
