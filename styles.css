@@ -320,6 +320,13 @@ strong {
 
 .site-nav a:hover::after { width: 100%; }
 
+.nav-resume {
+  color: var(--accent-green) !important;
+  font-weight: 600 !important;
+}
+
+.nav-resume::after { background: var(--accent-green) !important; }
+
 .nav-cta {
   background: var(--primary) !important;
   color: #fff !important;
