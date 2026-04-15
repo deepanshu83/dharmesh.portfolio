@@ -361,17 +361,40 @@
         </div>
 
         <!-- Video Reel Preview -->
-        <div class="container" style="margin-top: 2.5rem;" data-animate="fade-up" data-delay="200">
-          <div class="video-showcase glass-card" style="padding: 1.5rem; border-radius: 28px;">
-            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-              <strong style="font-size: 1.1rem;">Trending Reel Edit</strong>
-              <span style="font-size: 0.82rem; color: var(--text-secondary); margin-left: auto;">Beat sync · Transitions · Motion</span>
+        <div class="container" style="margin-top: 4rem;" data-animate="fade-up" data-delay="200">
+          <div class="reel-showcase-wrapper">
+            <!-- Left: Info text -->
+            <div class="reel-info">
+              <div class="reel-info-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                <span>Video Editing</span>
+              </div>
+              <h3 class="reel-info-title">Trending <span class="text-gradient">Reel Edit</span></h3>
+              <p class="reel-info-desc">A scroll-stopping reel crafted with precision — beat-synced transitions, dynamic motion, and cinematic pacing.</p>
+              <div class="reel-info-tags">
+                <span class="reel-tag">Beat Sync</span>
+                <span class="reel-tag">Transitions</span>
+                <span class="reel-tag">Motion</span>
+                <span class="reel-tag">CapCut</span>
+              </div>
             </div>
-            <video controls playsinline style="width: 100%; border-radius: 20px; max-height: 500px; object-fit: cover; background: #000;">
-              <source src="assets/trending-reel.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <!-- Right: Phone-style video player -->
+            <div class="reel-phone-frame">
+              <div class="reel-phone-glow"></div>
+              <div class="reel-phone-inner">
+                <div class="reel-phone-notch"></div>
+                <video id="reelVideo" playsinline loop preload="metadata">
+                  <source src="assets/trending-reel.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <!-- Play / Pause overlay -->
+                <div class="reel-play-overlay" id="reelPlayOverlay">
+                  <div class="reel-play-btn">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

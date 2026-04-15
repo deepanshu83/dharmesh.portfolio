@@ -356,6 +356,47 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.3, rootMargin: '-80px 0px -50% 0px' });
 
   sections.forEach(sec => activeSectionObserver.observe(sec));
+
+  // ─── REEL VIDEO PLAY / PAUSE ───
+  const reelVideo = document.getElementById('reelVideo');
+  const reelOverlay = document.getElementById('reelPlayOverlay');
+
+  if (reelVideo && reelOverlay) {
+    const playIcon = `<svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>`;
+    const pauseIcon = `<svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" stroke="none"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>`;
+    const playBtn = reelOverlay.querySelector('.reel-play-btn');
+
+    function setPlayState(playing) {
+      if (playing) {
+        reelOverlay.classList.add('playing');
+        if (playBtn) playBtn.innerHTML = pauseIcon;
+      } else {
+        reelOverlay.classList.remove('playing');
+        if (playBtn) playBtn.innerHTML = playIcon;
+      }
+    }
+
+    reelOverlay.addEventListener('click', () => {
+      if (reelVideo.paused) {
+        reelVideo.play().then(() => setPlayState(true)).catch(() => {});
+      } else {
+        reelVideo.pause();
+        setPlayState(false);
+      }
+    });
+
+    reelVideo.addEventListener('play',  () => setPlayState(true));
+    reelVideo.addEventListener('pause', () => setPlayState(false));
+    reelVideo.addEventListener('ended', () => setPlayState(false));
+
+    // Auto-pause when scrolled out of view
+    const reelObserver = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting && !reelVideo.paused) {
+        reelVideo.pause();
+      }
+    }, { threshold: 0.2 });
+    reelObserver.observe(reelVideo);
+  }
 });
 
 // CSS for fadeIn animation
