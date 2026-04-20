@@ -369,13 +369,26 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
                 <span>Video Editing</span>
               </div>
-              <h3 class="reel-info-title">Trending <span class="text-gradient">Reel Edit</span></h3>
+              <h3 class="reel-info-title">Trending <span class="text-gradient reel-current-label">Reel Edit</span></h3>
               <p class="reel-info-desc">A scroll-stopping reel crafted with precision — beat-synced transitions, dynamic motion, and cinematic pacing.</p>
               <div class="reel-info-tags">
                 <span class="reel-tag">Beat Sync</span>
                 <span class="reel-tag">Transitions</span>
                 <span class="reel-tag">Motion</span>
                 <span class="reel-tag">CapCut</span>
+              </div>
+              <div class="reel-source-buttons">
+                <button class="reel-source-btn reel-prev-btn" type="button" aria-label="Previous video">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <div class="reel-indicator">
+                  <span class="reel-dot active" data-index="0"></span>
+                  <span class="reel-dot" data-index="1"></span>
+                  <span class="reel-dot" data-index="2"></span>
+                </div>
+                <button class="reel-source-btn reel-next-btn" type="button" aria-label="Next video">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
               </div>
             </div>
             <!-- Right: Phone-style video player -->

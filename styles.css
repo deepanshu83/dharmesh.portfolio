@@ -1061,6 +1061,53 @@ strong {
   gap: 0.6rem;
 }
 
+.reel-source-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.3rem;
+}
+
+.reel-source-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.reel-source-btn:hover,
+.reel-source-btn:focus-visible {
+  background: rgba(139, 92, 246, 0.12);
+  border-color: rgba(139, 92, 246, 0.28);
+  color: #fff;
+}
+
+.reel-indicator {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.reel-dot.active {
+  background: #a78bfa;
+  transform: scale(1.2);
+}
+
 .reel-tag {
   padding: 0.4rem 1rem;
   border-radius: 999px;

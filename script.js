@@ -380,6 +380,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── REEL VIDEO PLAY / PAUSE ───
   const reelVideo = document.getElementById('reelVideo');
   const reelOverlay = document.getElementById('reelPlayOverlay');
+  const reelPrevBtn = document.querySelector('.reel-prev-btn');
+  const reelNextBtn = document.querySelector('.reel-next-btn');
+  const reelDots = document.querySelectorAll('.reel-dot');
+  const reelCurrentLabel = document.querySelector('.reel-current-label');
+
+  const reelSources = [
+    { video: 'assets/trending-reel.mp4', label: 'Reel Edit' },
+    { video: 'assets/video1.mp4', label: 'Video 1' },
+    { video: 'assets/video2.mp4', label: 'Video 2' }
+  ];
+
+  let currentReelIndex = 0;
 
   if (reelVideo && reelOverlay) {
     const playIcon = `<svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>`;
@@ -396,12 +408,62 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
+    function updateReelSource(index) {
+      if (index < 0 || index >= reelSources.length) return;
+      currentReelIndex = index;
+      const source = reelSources[index];
+      const sourceEl = reelVideo.querySelector('source');
+      if (sourceEl) {
+        sourceEl.src = source.video;
+        reelVideo.load();
+      }
+      if (reelCurrentLabel) {
+        reelCurrentLabel.textContent = source.label;
+      }
+      reelDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+    }
+
     reelOverlay.addEventListener('click', () => {
       if (reelVideo.paused) {
         reelVideo.play().then(() => setPlayState(true)).catch(() => {});
       } else {
         reelVideo.pause();
         setPlayState(false);
+      }
+    });
+
+    reelPrevBtn?.addEventListener('click', () => {
+      updateReelSource((currentReelIndex - 1 + reelSources.length) % reelSources.length);
+    });
+
+    reelNextBtn?.addEventListener('click', () => {
+      updateReelSource((currentReelIndex + 1) % reelSources.length);
+    });
+
+    reelDots.forEach((dot, index) => {
+      dot.addEventListener('click', () => updateReelSource(index));
+    });
+
+    // Swipe functionality for mobile
+    let startX = 0;
+    let endX = 0;
+
+    reelVideo.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    reelVideo.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX;
+      const diffX = startX - endX;
+
+      if (Math.abs(diffX) > 50) { // Minimum swipe distance
+        if (diffX > 0) {
+          // Swipe left - next video
+          updateReelSource((currentReelIndex + 1) % reelSources.length);
+        } else {
+          // Swipe right - previous video
+          updateReelSource((currentReelIndex - 1 + reelSources.length) % reelSources.length);
+        }
       }
     });
 
