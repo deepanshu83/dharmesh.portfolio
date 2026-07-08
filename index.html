@@ -263,21 +263,114 @@
       <div class="container">
         <div class="section-header" data-animate="fade-up">
           <span class="section-tag">Portfolio</span>
-          <h2>Recent <span class="text-gradient">Creative Work</span></h2>
-          <p class="section-desc">A curated selection of my best projects — each crafted to deliver impact.</p>
+          <h2>Creative <span class="text-gradient">Work</span></h2>
+          <p class="section-desc">A curated selection of client projects, reel work, logo systems and visual campaigns.</p>
         </div>
-        <div class="portfolio-filter" data-animate="fade-up">
-          <button class="filter-btn active" data-filter="all">All Work</button>
-          <button class="filter-btn" data-filter="editing">Photo Edits</button>
-          <button class="filter-btn" data-filter="video">Video/Reels</button>
-          <button class="filter-btn" data-filter="design">Design</button>
-          <button class="filter-btn" data-filter="typography">Typography</button>
+
+        <div class="section-subheader" data-animate="fade-up" data-delay="100">
+          <span class="section-tag">Featured Client Projects</span>
+          <h3>Premium work for clients</h3>
+          <p class="section-desc">Selected client projects with strong visual storytelling, brand impact, and polished delivery.</p>
         </div>
-        <div class="portfolio-grid" data-animate="fade-up" data-delay="100">
+
+        <div class="featured-projects-grid" data-animate="fade-up" data-delay="150">
+          <article class="project-card glass-card" data-animate="fade-up" data-delay="150">
+            <div class="project-card-media">
+              <img src="assets/logo-brand-identity.jpeg" alt="Rajasthan GK logo and brand identity preview" loading="lazy" decoding="async" />
+              <div class="project-card-badge">
+                <img src="assets/Green And Creme Minimal Lotus With Sun Rays Jewellery Brand Logo Design_20260707_165336_0000.jpg.jpeg" alt="Green And Creme client logo" loading="lazy" decoding="async" />
+              </div>
+            </div>
+            <div class="project-card-body">
+              <span class="project-card-client">Green &amp; Crème</span>
+              <h3>Jewellery brand identity</h3>
+              <div class="project-card-tags">
+                <span>Logo Design</span>
+                <span>Brand Identity</span>
+              </div>
+              <p>Luxury jewellery branding with elegant lotus iconography and sun ray detailing for a premium client experience.</p>
+              <a href="#portfolioItem4" class="btn btn-glass project-card-cta">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card" data-animate="fade-up" data-delay="200">
+            <div class="project-card-media">
+              <img src="assets/cinematic-color-grade.jpeg" alt="Cinematic color grade project preview" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-card-body">
+              <span class="project-card-client">Street Market</span>
+              <h3>Cinematic color grade</h3>
+              <div class="project-card-tags">
+                <span>Photo Editing</span>
+                <span>Cinematic Style</span>
+              </div>
+              <p>Edited a visual story with warm cinematic tones, rich contrast and a polished editorial finish.</p>
+              <a href="#portfolioItem5" class="btn btn-glass project-card-cta">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card" data-animate="fade-up" data-delay="250">
+            <div class="project-card-media">
+              <img src="assets/thumbnail-design.jpeg" alt="YouTube thumbnail design project preview" loading="lazy" decoding="async" />
+            </div>
+            <div class="project-card-body">
+              <span class="project-card-client">Trend Launch</span>
+              <h3>Thumbnail design</h3>
+              <div class="project-card-tags">
+                <span>Thumbnail</span>
+                <span>Social Media</span>
+              </div>
+              <p>High-CTR thumbnail branding crafted to boost clicks with bold typography and strong visual hierarchy.</p>
+              <a href="#portfolioItem3" class="btn btn-glass project-card-cta">View Project</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-subheader" data-animate="fade-up" data-delay="300">
+          <span class="section-tag">Featured Reels</span>
+          <h3>Reel work from the reel folder</h3>
+          <p class="section-desc">All reel videos from the reels folder shown in a modern responsive grid with modal playback.</p>
+        </div>
+
+        <div class="reels-grid" id="featuredReels" data-animate="fade-up" data-delay="350"></div>
+
+        <div class="section-subheader" data-animate="fade-up" data-delay="400">
+          <span class="section-tag">Logo Designs</span>
+          <h3>Client brand marks</h3>
+          <p class="section-desc">Logo designs created for clients, displayed in a clean gallery with subtle hover glow.</p>
+        </div>
+
+        <div class="logo-grid" data-animate="fade-up" data-delay="450">
+          <div class="logo-card glass-card">
+            <img src="assets/Green And Creme Minimal Lotus With Sun Rays Jewellery Brand Logo Design_20260707_165336_0000.jpg.jpeg" alt="Green And Creme jewellery brand logo" loading="lazy" decoding="async" />
+          </div>
+          <div class="logo-card glass-card">
+            <img src="assets/logo-brand-identity.jpeg" alt="Rajasthan GK logo mark and identity artwork" loading="lazy" decoding="async" />
+          </div>
+        </div>
+
+        <div class="section-header section-header--small" data-animate="fade-up" data-delay="500">
+          <span class="section-tag">Creative Work</span>
+          <h2>More client projects</h2>
+          <p class="section-desc">Browse photo edits, thumbnails, banners, typography, and social media visuals.</p>
+        </div>
+
+        <div class="gallery-filter" data-animate="fade-up" data-delay="550">
+          <button class="gallery-filter-btn active" data-filter="all">All</button>
+          <button class="gallery-filter-btn" data-filter="reels">Reels</button>
+          <button class="gallery-filter-btn" data-filter="video-editing">Video Editing</button>
+          <button class="gallery-filter-btn" data-filter="logo-design">Logo Design</button>
+          <button class="gallery-filter-btn" data-filter="graphic-design">Graphic Design</button>
+          <button class="gallery-filter-btn" data-filter="photo-editing">Photo Editing</button>
+          <button class="gallery-filter-btn" data-filter="social-media">Social Media</button>
+          <button class="gallery-filter-btn" data-filter="thumbnail">Thumbnail</button>
+        </div>
+
+        <div class="portfolio-grid" data-animate="fade-up" data-delay="600">
           <!-- Color Correction & Retouch -->
-          <div class="portfolio-item" data-category="editing" id="portfolioItem1">
+          <div class="portfolio-item" data-category="photo-editing" id="portfolioItem1">
             <div class="portfolio-img-wrap">
-              <img src="assets/color-correction.jpeg" alt="Street photography with cinematic color correction — train steps" />
+              <img src="assets/color-correction.jpeg" alt="Street photography with cinematic color correction — train steps" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
                 <span class="portfolio-cat">Photo Edit</span>
                 <h3>Color Correction & Retouch</h3>
@@ -289,9 +382,9 @@
             </div>
           </div>
           <!-- Graphic Design -->
-          <div class="portfolio-item portfolio-item-tall" data-category="design" id="portfolioItem2">
+          <div class="portfolio-item portfolio-item-tall" data-category="graphic-design social-media" id="portfolioItem2">
             <div class="portfolio-img-wrap">
-              <img src="assets/graphic-design.jpeg" alt="Hi Dhiru — Custom illustrated graphic design of Dharmesh Arora" />
+              <img src="assets/graphic-design.jpeg" alt="Hi Dhiru — Custom illustrated graphic design of Dharmesh Arora" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
                 <span class="portfolio-cat">Graphic Design</span>
                 <h3>Custom Illustration</h3>
@@ -303,11 +396,11 @@
             </div>
           </div>
           <!-- Thumbnail Design -->
-          <div class="portfolio-item" data-category="design" id="portfolioItem3">
+          <div class="portfolio-item" data-category="thumbnail social-media" id="portfolioItem3">
             <div class="portfolio-img-wrap">
-              <img src="assets/thumbnail-design.jpeg" alt="Delhi Explore — YouTube thumbnail design with bold typography" />
+              <img src="assets/thumbnail-design.jpeg" alt="Delhi Explore — YouTube thumbnail design with bold typography" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
-                <span class="portfolio-cat">Design</span>
+                <span class="portfolio-cat">Thumbnail</span>
                 <h3>Thumbnail Design</h3>
                 <p>Eye-catching YouTube thumbnail with bold typography</p>
                 <button class="portfolio-expand" aria-label="Expand project">
@@ -317,11 +410,11 @@
             </div>
           </div>
           <!-- Logo & Brand Identity -->
-          <div class="portfolio-item" data-category="design" id="portfolioItem4">
+          <div class="portfolio-item" data-category="logo-design" id="portfolioItem4">
             <div class="portfolio-img-wrap">
-              <img src="assets/logo-brand-identity.jpeg" alt="Rajasthan GK — Logo and brand identity design with Instagram integration" />
+              <img src="assets/logo-brand-identity.jpeg" alt="Rajasthan GK — Logo and brand identity design with Instagram integration" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
-                <span class="portfolio-cat">Design</span>
+                <span class="portfolio-cat">Logo Design</span>
                 <h3>Logo & Brand Identity</h3>
                 <p>Complete brand identity for Rajasthan GK Instagram page</p>
                 <button class="portfolio-expand" aria-label="Expand project">
@@ -331,11 +424,11 @@
             </div>
           </div>
           <!-- Cinematic Color Grade -->
-          <div class="portfolio-item portfolio-item-tall" data-category="editing" id="portfolioItem5">
+          <div class="portfolio-item portfolio-item-tall" data-category="photo-editing" id="portfolioItem5">
             <div class="portfolio-img-wrap">
-              <img src="assets/cinematic-color-grade.jpeg" alt="Street market scene with cinematic color grading" />
+              <img src="assets/cinematic-color-grade.jpeg" alt="Street market scene with cinematic color grading" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
-                <span class="portfolio-cat">Photo Edit</span>
+                <span class="portfolio-cat">Photo Editing</span>
                 <h3>Cinematic Color Grade</h3>
                 <p>Moody, warm-toned street photography with editorial grading</p>
                 <button class="portfolio-expand" aria-label="Expand project">
@@ -345,11 +438,11 @@
             </div>
           </div>
           <!-- Typography -->
-          <div class="portfolio-item" data-category="typography" id="portfolioItem6">
+          <div class="portfolio-item" data-category="graphic-design social-media" id="portfolioItem6">
             <div class="portfolio-img-wrap">
-              <img src="assets/typography.jpeg" alt="Art of Minimalist Style — Typography and photo collage design" />
+              <img src="assets/typography.jpeg" alt="Art of Minimalist Style — Typography and photo collage design" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
-                <span class="portfolio-cat">Typography</span>
+                <span class="portfolio-cat">Graphic Design</span>
                 <h3>Art of Minimalist Style</h3>
                 <p>Creative typography collage with minimalist aesthetic</p>
                 <button class="portfolio-expand" aria-label="Expand project">
@@ -360,53 +453,35 @@
           </div>
         </div>
 
-        <!-- Video Reel Preview -->
-        <div class="container" style="margin-top: 4rem;" data-animate="fade-up" data-delay="200">
-          <div class="reel-showcase-wrapper">
-            <!-- Left: Info text -->
-            <div class="reel-info">
-              <div class="reel-info-badge">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
-                <span>Video Editing</span>
+        <div class="portfolio-stats" data-animate="fade-up" data-delay="650">
+          <div class="stats-grid">
+            <div class="stat-card glass-card">
+              <div class="stat-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
               </div>
-              <h3 class="reel-info-title">Trending <span class="text-gradient reel-current-label">Reel Edit</span></h3>
-              <p class="reel-info-desc">A scroll-stopping reel crafted with precision — beat-synced transitions, dynamic motion, and cinematic pacing.</p>
-              <div class="reel-info-tags">
-                <span class="reel-tag">Beat Sync</span>
-                <span class="reel-tag">Transitions</span>
-                <span class="reel-tag">Motion</span>
-                <span class="reel-tag">CapCut</span>
-              </div>
-              <div class="reel-source-buttons">
-                <button class="reel-source-btn reel-prev-btn" type="button" aria-label="Previous video">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-                </button>
-                <div class="reel-indicator">
-                  <span class="reel-dot active" data-index="0"></span>
-                  <span class="reel-dot" data-index="1"></span>
-                  <span class="reel-dot" data-index="2"></span>
-                </div>
-                <button class="reel-source-btn reel-next-btn" type="button" aria-label="Next video">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-                </button>
-              </div>
+              <strong class="counter" data-target="170" data-suffix="+">0</strong>
+              <p>Projects Delivered</p>
             </div>
-            <!-- Right: Phone-style video player -->
-            <div class="reel-phone-frame">
-              <div class="reel-phone-glow"></div>
-              <div class="reel-phone-inner">
-                <div class="reel-phone-notch"></div>
-                <video id="reelVideo" playsinline loop preload="metadata">
-                  <source src="assets/trending-reel.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <!-- Play / Pause overlay -->
-                <div class="reel-play-overlay" id="reelPlayOverlay">
-                  <div class="reel-play-btn">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#fff" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                  </div>
-                </div>
+            <div class="stat-card glass-card">
+              <div class="stat-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
               </div>
+              <strong class="counter" data-target="600" data-suffix="K+">0</strong>
+              <p>Reach Generated</p>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <strong class="counter" data-target="2000" data-suffix="+">0</strong>
+              <p>Organic Followers</p>
+            </div>
+            <div class="stat-card glass-card">
+              <div class="stat-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <strong class="counter" data-target="1" data-suffix=" Year+">0</strong>
+              <p>Years Experience</p>
             </div>
           </div>
         </div>
