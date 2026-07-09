@@ -1234,18 +1234,18 @@ strong {
 
 .logo-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: 3rem;
 }
 
 .logo-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.1rem;
-  min-height: 120px;
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  padding: 1.6rem;
+  min-height: auto;
   border-radius: var(--radius-lg);
   border: 1px solid var(--glass-border);
   background: var(--glass);
@@ -1254,14 +1254,32 @@ strong {
 
 .logo-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(139, 92, 246, 0.16);
-  border-color: rgba(139, 92, 246, 0.18);
+  box-shadow: 0 18px 40px rgba(99, 102, 241, 0.16);
+  border-color: rgba(99, 102, 241, 0.18);
 }
 
 .logo-card img {
-  max-width: 100%;
-  max-height: 64px;
+  max-width: 120px;
+  width: 100%;
+  max-height: 100px;
   object-fit: contain;
+}
+
+.logo-card-content {
+  text-align: center;
+}
+
+.logo-card-content h4 {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.logo-card-content p {
+  margin: 0.55rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
 }
 
 .work-links-grid {
