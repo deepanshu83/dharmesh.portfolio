@@ -326,14 +326,6 @@
           </article>
         </div>
 
-        <div class="section-subheader" data-animate="fade-up" data-delay="300">
-          <span class="section-tag">Featured Reels</span>
-          <h3>Reel work from the reel folder</h3>
-          <p class="section-desc">All reel videos from the reels folder shown in a modern responsive grid with modal playback.</p>
-        </div>
-
-        <div class="reels-grid" id="featuredReels" data-animate="fade-up" data-delay="350"></div>
-
         <div class="section-subheader" data-animate="fade-up" data-delay="400">
           <span class="section-tag">Logo Designs</span>
           <h3>Client brand marks</h3>
@@ -347,6 +339,29 @@
           <div class="logo-card glass-card">
             <img src="assets/logo-brand-identity.jpeg" alt="Rajasthan GK logo mark and identity artwork" loading="lazy" decoding="async" />
           </div>
+        </div>
+
+        <div class="work-links-grid" data-animate="fade-up" data-delay="470">
+          <article class="work-link-card glass-card">
+            <h3>Instagram Profile</h3>
+            <p>Open the Instagram page directly for latest reels and updates.</p>
+            <a href="https://www.instagram.com/jkjwellerschirawa?igsh=MWhncnlnZ3M2djJieg==" target="_blank" rel="noreferrer" class="btn btn-glass">Open Instagram</a>
+          </article>
+          <article class="work-link-card glass-card">
+            <h3>Instagram Reel 1</h3>
+            <p>View the first reel to explore editing style and pacing.</p>
+            <a href="https://www.instagram.com/reel/DaIn1eET2zR/?igsh=amlmcG4wMjEwaWI3" target="_blank" rel="noreferrer" class="btn btn-glass">Open Reel 1</a>
+          </article>
+          <article class="work-link-card glass-card">
+            <h3>Instagram Reel 2</h3>
+            <p>Watch the second reel for more creative video examples.</p>
+            <a href="https://www.instagram.com/reel/DaeyA2MjnSg/?igsh=cmkxcjlubnprdjNs" target="_blank" rel="noreferrer" class="btn btn-glass">Open Reel 2</a>
+          </article>
+          <article class="work-link-card glass-card">
+            <h3>Project Drive</h3>
+            <p>Access the shared work folder and review project files instantly.</p>
+            <a href="https://drive.google.com/drive/folders/1eMl_RSZQgKsTj8Z3BuhfDxp9LsQnAzhD" target="_blank" rel="noreferrer" class="btn btn-glass">Open Drive</a>
+          </article>
         </div>
 
         <div class="section-header section-header--small" data-animate="fade-up" data-delay="500">
@@ -366,9 +381,9 @@
           <button class="gallery-filter-btn" data-filter="thumbnail">Thumbnail</button>
         </div>
 
-        <div class="portfolio-grid" data-animate="fade-up" data-delay="600">
+        <div class="portfolio-grid creative-gallery-grid" data-animate="fade-up" data-delay="600">
           <!-- Color Correction & Retouch -->
-          <div class="portfolio-item" data-category="photo-editing" id="portfolioItem1">
+          <div class="portfolio-item" data-category="editing photo-editing" id="portfolioItem1">
             <div class="portfolio-img-wrap">
               <img src="assets/color-correction.jpeg" alt="Street photography with cinematic color correction — train steps" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
@@ -382,7 +397,7 @@
             </div>
           </div>
           <!-- Graphic Design -->
-          <div class="portfolio-item portfolio-item-tall" data-category="graphic-design social-media" id="portfolioItem2">
+          <div class="portfolio-item portfolio-item-tall" data-category="design graphic-design social-media" id="portfolioItem2">
             <div class="portfolio-img-wrap">
               <img src="assets/graphic-design.jpeg" alt="Hi Dhiru — Custom illustrated graphic design of Dharmesh Arora" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
@@ -396,7 +411,7 @@
             </div>
           </div>
           <!-- Thumbnail Design -->
-          <div class="portfolio-item" data-category="thumbnail social-media" id="portfolioItem3">
+          <div class="portfolio-item" data-category="design thumbnail social-media" id="portfolioItem3">
             <div class="portfolio-img-wrap">
               <img src="assets/thumbnail-design.jpeg" alt="Delhi Explore — YouTube thumbnail design with bold typography" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
@@ -410,7 +425,7 @@
             </div>
           </div>
           <!-- Logo & Brand Identity -->
-          <div class="portfolio-item" data-category="logo-design" id="portfolioItem4">
+          <div class="portfolio-item" data-category="design logo-design" id="portfolioItem4">
             <div class="portfolio-img-wrap">
               <img src="assets/logo-brand-identity.jpeg" alt="Rajasthan GK — Logo and brand identity design with Instagram integration" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
@@ -424,7 +439,7 @@
             </div>
           </div>
           <!-- Cinematic Color Grade -->
-          <div class="portfolio-item portfolio-item-tall" data-category="photo-editing" id="portfolioItem5">
+          <div class="portfolio-item portfolio-item-tall" data-category="editing photo-editing" id="portfolioItem5">
             <div class="portfolio-img-wrap">
               <img src="assets/cinematic-color-grade.jpeg" alt="Street market scene with cinematic color grading" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
@@ -438,7 +453,7 @@
             </div>
           </div>
           <!-- Typography -->
-          <div class="portfolio-item" data-category="graphic-design social-media" id="portfolioItem6">
+          <div class="portfolio-item" data-category="design graphic-design social-media" id="portfolioItem6">
             <div class="portfolio-img-wrap">
               <img src="assets/typography.jpeg" alt="Art of Minimalist Style — Typography and photo collage design" loading="lazy" decoding="async" />
               <div class="portfolio-overlay">
@@ -451,6 +466,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="view-more-wrapper" data-animate="fade-up" data-delay="610">
+          <button id="galleryViewMore" class="btn btn-glass">View More Projects</button>
         </div>
 
         <div class="portfolio-stats" data-animate="fade-up" data-delay="650">
@@ -666,7 +684,16 @@
               </div>
               <div>
                 <strong>Instagram</strong>
-                <a href="https://www.instagram.com/someting_elses?igsh=MWR2cnQ3bmV5eDZ6bw==" target="_blank" rel="noreferrer">@someting_elses →</a>
+                <a href="https://www.instagram.com/jkjwellerschirawa?igsh=MWhncnlnZ3M2djJieg==" target="_blank" rel="noreferrer">@jkjwellerschirawa →</a>
+              </div>
+            </div>
+            <div class="contact-method glass-card">
+              <div class="contact-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/></svg>
+              </div>
+              <div>
+                <strong>Google Drive</strong>
+                <a href="https://drive.google.com/drive/folders/1eMl_RSZQgKsTj8Z3BuhfDxp9LsQnAzhD" target="_blank" rel="noreferrer">Work Folder →</a>
               </div>
             </div>
             <div class="contact-method glass-card">
@@ -756,7 +783,10 @@
         </div>
         <div class="footer-col">
           <strong>Social</strong>
-          <a href="https://www.instagram.com/someting_elses?igsh=MWR2cnQ3bmV5eDZ6bw==" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://www.instagram.com/jkjwellerschirawa?igsh=MWhncnlnZ3M2djJieg==" target="_blank" rel="noreferrer">Instagram Profile</a>
+          <a href="https://drive.google.com/drive/folders/1eMl_RSZQgKsTj8Z3BuhfDxp9LsQnAzhD" target="_blank" rel="noreferrer">Work Drive</a>
+          <a href="https://www.instagram.com/reel/DaIn1eET2zR/?igsh=amlmcG4wMjEwaWI3" target="_blank" rel="noreferrer">Instagram Reel 1</a>
+          <a href="https://www.instagram.com/reel/DaeyA2MjnSg/?igsh=cmkxcjlubnprdjNs" target="_blank" rel="noreferrer">Instagram Reel 2</a>
           <a href="https://youtube.com/@dkpportrait?si=TMKTcOCWJ3Qd-buy" target="_blank" rel="noreferrer">YouTube</a>
           <a href="https://pin.it/6qak8pukp" target="_blank" rel="noreferrer">Pinterest</a>
           <a href="https://www.photocrowd.com/photographer-community/572406/" target="_blank" rel="noreferrer">Photocrowd 🏆</a>

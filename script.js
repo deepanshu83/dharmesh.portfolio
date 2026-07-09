@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     animateCursor();
 
     // Hover effect on interactive elements
-    const interactiveElements = document.querySelectorAll('a, button, .portfolio-item, .service-card, .skill-card, .stat-card, .testimonial-card');
+    const interactiveElements = document.querySelectorAll('a, button, .portfolio-item, .project-card, .reel-card, .service-card, .skill-card, .stat-card, .testimonial-card');
     interactiveElements.forEach(el => {
       el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
       el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
@@ -150,12 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const filter = btn.dataset.filter;
 
       portfolioItems.forEach(item => {
-        if (filter === 'all' || item.dataset.category === filter) {
-          item.style.display = '';
-          item.style.animation = 'fadeIn 0.5s ease forwards';
-        } else {
-          item.style.display = 'none';
-        }
+        const categories = item.dataset.category ? item.dataset.category.split(' ') : [];
+        const match = filter === 'all' || categories.includes(filter);
+        item.style.display = match ? '' : 'none';
+        if (match) item.style.animation = 'fadeIn 0.5s ease forwards';
       });
     });
   });
@@ -479,6 +477,57 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.2 });
     reelObserver.observe(reelVideo);
   }
+
+  // ─── GALLERY FILTER ───
+  const galleryFilterBtns = document.querySelectorAll('.gallery-filter-btn');
+  const galleryItems = Array.from(document.querySelectorAll('.portfolio-item'));
+  const galleryViewMore = document.getElementById('galleryViewMore');
+  let currentGalleryFilter = 'all';
+  let galleryExpanded = false;
+  const galleryPreviewLimit = 4;
+
+  function galleryMatches(item, filter) {
+    const categories = item.dataset.category ? item.dataset.category.split(' ') : [];
+    return filter === 'all' || categories.includes(filter);
+  }
+
+  function updateGalleryVisibility() {
+    let visibleCount = 0;
+    galleryItems.forEach(item => {
+      const match = galleryMatches(item, currentGalleryFilter);
+      if (!match) {
+        item.style.display = 'none';
+        return;
+      }
+      visibleCount += 1;
+      if (!galleryExpanded && visibleCount > galleryPreviewLimit) {
+        item.style.display = 'none';
+      } else {
+        item.style.display = '';
+      }
+    });
+    if (galleryViewMore) {
+      galleryViewMore.textContent = galleryExpanded ? 'View Less Projects' : 'View More Projects';
+      galleryViewMore.classList.toggle('hidden', visibleCount <= galleryPreviewLimit);
+    }
+  }
+
+  galleryFilterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      galleryFilterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentGalleryFilter = btn.dataset.filter;
+      galleryExpanded = false;
+      updateGalleryVisibility();
+    });
+  });
+
+  galleryViewMore?.addEventListener('click', () => {
+    galleryExpanded = !galleryExpanded;
+    updateGalleryVisibility();
+  });
+
+  updateGalleryVisibility();
 });
 
 // CSS for fadeIn animation
